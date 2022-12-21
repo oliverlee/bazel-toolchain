@@ -21,5 +21,6 @@ aliased_libs = [
 
 aliased_tools = [
     "clang-format",
+    "clang-tidy",
     "llvm-cov",
 ]
