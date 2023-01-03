@@ -511,9 +511,9 @@ cc_import(
     tool_target_strs = []
     for name in _aliased_tools:
         template = """
-alias(
+sh_binary(
     name = "{name}",
-    actual = "{{llvm_dist_label_prefix}}bin/{name}",
+    srcs = ["{{llvm_dist_label_prefix}}bin/{name}"],
 )""".format(name = name)
         tool_target_strs.append(template)
 
