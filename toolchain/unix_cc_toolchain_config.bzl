@@ -1273,6 +1273,7 @@ def _impl(ctx):
         ],
         specific_link_flags = [
             "-fsanitize=undefined",
+            "-fsanitize-link-c++-runtime",
         ],
     )
 
